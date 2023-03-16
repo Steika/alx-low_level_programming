@@ -15,4 +15,3 @@ int main(void)
 	puts("Size of a float: %f byte(s)", sizeof(float));
 	return (0);
 }
-
