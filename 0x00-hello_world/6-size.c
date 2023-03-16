@@ -6,12 +6,22 @@
  * Return: always 0
  */
 
-int main(void)
-{
-	puts("Size of a char: %c byte(s)", sizeof(char));
-	puts("Size of an int: %d byte(s)", sizeof(int));
-	puts("Size of a long int: %u byte(s)", sizeof(long int));
-	puts("Size of a long long int: %lld byte(s)", sizeof(long long int));
-	puts("Size of a float: %f byte(s)", sizeof(float));
-	return (0);
+int main() {
+    printf("Size of char: %ld byte(s)\n", sizeof(char));
+
+    printf("Size of short: %ld byte(s)\n", sizeof(short));
+
+    printf("Size of int: %ld byte(s)\n", sizeof(int));
+
+    printf("Size of long: %ld byte(s)\n", sizeof(long));
+
+    printf("Size of float: %ld byte(s)\n", sizeof(float));
+
+    printf("Size of double: %ld byte(s)\n", sizeof(double));
+
+    printf("Size of long double: %ld byte(s)\n", sizeof(long double));
+
+    printf("Size of void*: %ld byte(s)\n", sizeof(void*));
+    return 0;
 }
+
