@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - The starting of the program
@@ -14,12 +12,13 @@ int main(void)
 
 	while (letter <= 'z')
 	{
-		if (letter != 'q' && letter != 'e')
+		if (letter == 'q' || letter == 'e')
 		{
-			putchar(letter);
 			letter++;
 			continue;
 		}
+		putchar(letter);
+		letter++;
 	}
 
 	putchar('\n');
